@@ -1,0 +1,24 @@
+Description: This app simulates something called an etch-a-sketch.
+It is a educational project from The Odin project
+
+Project specs:
+
+(*) Pre-requisites: Set up a GitHub repository for the project.
+
+1 The app should have a 16 x 16 grid of square divs
+    -The divs should be created in JS
+    -The grid of divs should be inside a container div
+    - Use CSS Grid as the way to make the divs appera as grid (other ways can be used, I sm more confortable with CSS Grid).
+
+2 Pay attention to borders and margins!
+
+3 Use hover effect to change grid cell color when mouse passes over them.
+    -for the effect, add a class in JS to the div that is being hovered.
+
+4 Have a button to clear the grid to white when clicked.
+
+5 Have an section to create a new grid with a different number of cells. The user is asked to input the "S" quantity for a S x S grid. The grid overall dimensions should not change for different grid cell numbers.
+
+5 Have a section where the user can choose 2 colors, one base color for the grid background and one for the mouse trace. The mouse trace color can be randomly selected for each cell (rainbow effect).
+
+6 In black and white mode, each mouse pass should add only 10% black to the color, so it takes 10 passes for a cell to be completely black. 
