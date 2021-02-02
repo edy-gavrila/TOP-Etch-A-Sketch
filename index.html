@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Etch A Sketch</title>
-</head>
-<body>
-    <div class="controls"></div>
-    <div class="grid-container">
+  </head>
+  <body>
+    <div class="title">
+      <h1>Etch a Sketch</h1>
     </div>
 
-</body>
+    <section class="main-section">
+      <div class="controls-container" id="controls-container">
+        <button id="reset-btn">Reset</button>
+
+        <div class="size-control-container">
+          <input type="text" class="input-size" placeholder="Enter grid size" />
+          <button id="change-size-btn">Change</button>
+        </div>
+
+        <div class="color-controls">
+          <div class="radio-buttons">
+            <h4>Color scheme:</h4>
+            <input
+              type="radio"
+              id="black-white"
+              name="color-select"
+              value="black-white"
+            />
+            <label for="black-white">Grayscale</label><br />
+            <input
+              type="radio"
+              id="color-scheme"
+              name="color-select"
+              value="color-scheme"
+            />
+            <label for="color-scheme">Color Scheme</label><br />
+            <input
+              type="radio"
+              id="rainbow"
+              name="color-select"
+              value="rainbow"
+            /><label for="rainbow">Rainbow</label><br />
+          </div>
+          <div class="color-pickers"></div>
+        </div>
+      </div>
+
+      <div class="grid-container" id="grid-container"></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
 </html>
