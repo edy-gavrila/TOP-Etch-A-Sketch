@@ -24,19 +24,19 @@ body {
   margin: 20px;
 }
 .grid-container {
-  width: 640px;
-  height: 640px;
+  width: 644px;
+  height: 643px;
+  display: flex;
+  flex-wrap: wrap;
   border: solid 2px black;
-  overflow: hidden;
-  margin: 0 2rem;
+  
+  margin: 2rem 2rem;
   background-color: white;
 }
 
 .controls-container {
   padding: 20px;
-  border: solid 2px black;
   width: 320px;
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +58,7 @@ button {
   font-size: 1.1rem;
 }
 
-#reset-btn {
+#erase-btn {
   width: 100%;
   margin: 20px 0;
 }
@@ -77,9 +77,11 @@ button:hover {
 }
 
 .input-size {
-  border: none;
+  width: 60%;
+  border: solid 2px rgba(138, 43, 226, 0.7);
+  background-color: rgb(203, 175, 230);
+  padding-left: 10px;
   border-radius: 5px;
-  background-color: lightgrey;
 }
 
 .input-size:focus {
@@ -105,4 +107,20 @@ h4 {
 
 .color-pickers {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.cell {
+  border: solid 1px lightgrey;
+}
+
+@media (max-width: 960px) {
+  .main-section {
+    flex-direction: column;
+    align-items: center;
+  }
 }

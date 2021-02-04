@@ -5,17 +5,20 @@ Project specs:
 
 (*) Pre-requisites: Set up a GitHub repository for the project.
 
-1 The app should have a 16 x 16 grid of square divs
+1 (*) The app should have a 16 x 16 grid of square divs
     -The divs should be created in JS
     -The grid of divs should be inside a container div
-    - Use CSS Grid as the way to make the divs appera as grid (other ways can be used, I sm more confortable with CSS Grid).
+    - Use CSS Grid as the way to make the divs appear as grid (other ways can be used, I am more confortable with CSS Grid).
 
-2 Pay attention to borders and margins!
+Note: In the end, I went for a property of  display: flex for the grid container and a property of flex-wrap set to no-wrap. 
+
+2 (*) Pay attention to borders and margins!
+Note: On some grid-size values, the border for the cells is doubled. I suspect there is a rounding error in the calculations for the cell size. I can live with that for the moment. 
 
 3 Use hover effect to change grid cell color when mouse passes over them.
     -for the effect, add a class in JS to the div that is being hovered.
 
-4 Have a button to clear the grid to white when clicked.
+4 (*) Have a button to clear the grid to white when clicked.
 
 5 Have an section to create a new grid with a different number of cells. The user is asked to input the "S" quantity for a S x S grid. The grid overall dimensions should not change for different grid cell numbers.
 

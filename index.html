@@ -13,10 +13,18 @@
 
     <section class="main-section">
       <div class="controls-container" id="controls-container">
-        <button id="reset-btn">Reset</button>
+        <button id="erase-btn">Erase</button>
 
         <div class="size-control-container">
-          <input type="text" class="input-size" placeholder="Enter grid size" />
+          <input
+            type="number"
+            class="input-size"
+            id="grid-size"
+            value="32"
+            min="16"
+            max="64"
+            step="8"
+          />
           <button id="change-size-btn">Change</button>
         </div>
 
@@ -28,6 +36,7 @@
               id="black-white"
               name="color-select"
               value="black-white"
+              checked
             />
             <label for="black-white">Grayscale</label><br />
             <input
@@ -44,7 +53,11 @@
               value="rainbow"
             /><label for="rainbow">Rainbow</label><br />
           </div>
-          <div class="color-pickers"></div>
+          <div class="color-pickers">
+            <h4>Select colors:</h4>
+            <input type="color" name="trace" id="trace-color" />
+            <input type="color" name="trace" id="background-color" />
+          </div>
         </div>
       </div>
 
