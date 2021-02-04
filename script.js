@@ -27,7 +27,8 @@ let appState = {
 //               --used first time when the app is loaded
 function initOrReset(gridSize) {
   appState.mouseDown = false;
-  appState.colorScheme = "user-colors";
+  appState.colorScheme = "grayscale";
+  grayScaleRadio.setAttribute("checked", "true");
   appState.traceColor = traceColorPicker.value;
   appState.bkgColor = bkgColorPicker.value;
   constructGrid(appState.gridSize);
@@ -87,7 +88,7 @@ sketchPad.addEventListener("mouseup", () => {
 
 changeSizeBtn.addEventListener("click", () => {
   appState.gridSize = parseInt(gridSizeEl.value);
-  initOrReset();
+  constructGrid(appState.gridSize);
 });
 
 //hideColorPickers()  --hides the color pickers
@@ -96,7 +97,6 @@ function hideColorPickers() {
 }
 
 colorSchemeRadio.addEventListener("change", () => {
-  console.log("radio selected");
   colorPickersContainer.style.display = "flex";
   appState.bkgColor = bkgColorPicker.value;
   appState.traceColor = traceColorPicker.value;
