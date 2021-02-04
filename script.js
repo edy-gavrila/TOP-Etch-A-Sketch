@@ -34,7 +34,7 @@ function initOrReset(gridSize) {
   constructGrid(appState.gridSize);
 }
 
-resetBtn.addEventListener("click", initOrReset);
+resetBtn.addEventListener("click", () => constructGrid(appState.gridSize));
 
 //constructGrid(gridSize)  --construct a grid of divs in the grid container div, using grifSize for the number of divs on one side
 function constructGrid(gridSize) {
